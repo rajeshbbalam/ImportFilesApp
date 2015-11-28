@@ -24,7 +24,7 @@
 }
 - (IBAction)ShowFilesImportPopUp:(id)sender {
     fVc = [[FileImportViewController alloc] init];
-    fVc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    fVc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
     [self presentViewController:fVc animated:YES completion:^{
         
     }];

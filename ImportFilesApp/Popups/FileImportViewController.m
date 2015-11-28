@@ -22,7 +22,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
+    self.view.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.75];
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
     [self.view addGestureRecognizer:singleTap];
 }
@@ -30,7 +30,7 @@
 {
     [super viewWillAppear:animated];
     
-    float xOff = 50;
+    float xOff = (CGRectGetWidth(self.view.frame)-200)/2;
     float yOff = CGRectGetMidY(self.view.frame)-75;
     CGRect rect = self.view.bounds;
     rect.origin = CGPointMake(xOff, yOff);
