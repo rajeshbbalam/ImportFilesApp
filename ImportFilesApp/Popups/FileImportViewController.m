@@ -45,7 +45,7 @@
     if(type<kAttachmentType_Audio){
         photoLibraryPicker = [[UIImagePickerController alloc] init];
         photoLibraryPicker.delegate = self;
-        photoLibraryPicker.allowsEditing = NO;
+        photoLibraryPicker.allowsEditing = YES;
     }
     switch (type) {
         case kAttachmentType_ImageGallery:
