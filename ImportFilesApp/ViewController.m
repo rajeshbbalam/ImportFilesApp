@@ -7,16 +7,28 @@
 //
 
 #import "ViewController.h"
+#import "FileImportViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
+{
+    FileImportViewController *fVc;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+}
+- (IBAction)ShowFilesImportPopUp:(id)sender {
+    fVc = [[FileImportViewController alloc] init];
+    fVc.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [self presentViewController:fVc animated:YES completion:^{
+        
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
