@@ -104,7 +104,7 @@
         
     }else{
        
-        //UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+        UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
         
        // NSData* imageData = UIImageJPEGRepresentation(image, 1.0);
        
